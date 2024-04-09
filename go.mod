@@ -2,7 +2,10 @@ module custom-apiserver
 
 go 1.18
 
-require k8s.io/apimachinery v0.25.0
+require (
+	k8s.io/apimachinery v0.25.0
+	k8s.io/code-generator v0.23.5
+)
 
 require (
 	github.com/PuerkitoBio/purell v1.1.1 // indirect
@@ -32,7 +35,6 @@ require (
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/code-generator v0.23.5 // indirect
 	k8s.io/gengo v0.0.0-20210813121822-485abfe95c7c // indirect
 	k8s.io/klog/v2 v2.70.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20220803162953-67bda5d908f1 // indirect
